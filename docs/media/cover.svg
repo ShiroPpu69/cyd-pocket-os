@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+<title id="title">CYD Pocket OS</title><desc id="desc">Small screen. Real apps. An ESP32 touchscreen desktop.</desc>
+<rect width="1200" height="460" rx="20" fill="#0c100f"/><path d="M0 400H1200M0 80H1200M80 0V460M1120 0V460" stroke="#1f2c28"/>
+<rect x="80" y="112" width="7" height="40" fill="#d7b067"/>
+<g font-family="monospace" fill="#eef4ee"><text x="108" y="146" font-size="20" letter-spacing="4" fill="#9ac7b5">ESP32 / TOUCH / PIXELS</text><text x="80" y="228" font-size="65" font-weight="bold" letter-spacing="-2">CYD Pocket OS</text><text x="82" y="276" font-size="25" fill="#bdcdc4">Small screen. Real apps.</text><text x="82" y="343" font-size="16" fill="#8faaa0">SWIPE HOME · CONTROL MUSIC · CHECK MATCHES</text></g>
+<rect x="870" y="44" width="226" height="370" rx="25" fill="#1c2521" stroke="#42544b" stroke-width="2"/><rect x="884" y="62" width="198" height="328" rx="13" fill="#070c09"/>
+<g font-family="monospace"><text x="898" y="92" fill="#c4d8cc" font-size="13">HOME</text><text x="898" y="132" fill="#e4eee6" font-size="26" font-weight="bold">CYD OS</text></g>
+<g stroke-width="1"><rect x="900" y="154" width="46" height="46" rx="10" fill="#18373d" stroke="#375961"/><rect x="960" y="154" width="46" height="46" rx="10" fill="#3d2420" stroke="#65413a"/><rect x="1020" y="154" width="46" height="46" rx="10" fill="#183d2c" stroke="#3b654b"/><rect x="900" y="234" width="46" height="46" rx="10" fill="#36311e" stroke="#655b39"/><rect x="960" y="234" width="46" height="46" rx="10" fill="#18303d" stroke="#385b70"/><rect x="1020" y="234" width="46" height="46" rx="10" fill="#292f29" stroke="#526052"/></g>
+<g font-family="monospace" font-size="21" font-weight="bold" text-anchor="middle"><text x="923" y="185" fill="#8ebecd">S</text><text x="983" y="185" fill="#d18b7c">D</text><text x="1043" y="185" fill="#8bcba5">M</text><text x="923" y="265" fill="#dcc179">B</text><text x="983" y="265" fill="#8cbcd8">♪</text><text x="1043" y="265" fill="#c1d0c2">i</text></g>
+<path d="M900 342h166" stroke="#27382e" stroke-width="22" stroke-linecap="round"/><text x="944" y="346" fill="#bccfc3" font-family="monospace" font-size="12">01 / 02</text><rect x="965" y="378" width="34" height="3" fill="#8eb79f"/>
+</svg>

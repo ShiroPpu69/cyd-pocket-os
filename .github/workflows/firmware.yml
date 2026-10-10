@@ -1,0 +1,25 @@
+name: Firmware build
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: arduino/setup-arduino-cli@v2
+      - name: Install pinned dependencies
+        run: |
+          arduino-cli core update-index --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+          arduino-cli core install esp32:esp32@3.3.11 --additional-urls https://espressif.github.io/arduino-esp32/package_esp32_index.json
+          arduino-cli lib install "LovyanGFX@1.2.26" "ArduinoJson@7.4.3" "NimBLE-Arduino@2.5.0" "JPEGDEC@1.8.4" "AnimatedGIF@2.1.1"
+      - name: Use placeholder configuration
+        run: |
+          cp esp32_system/user_config.example.h esp32_system/user_config.h
+          cp esp32_system/spotify_config.example.h esp32_system/spotify_config.h
+      - name: Check public content
+        run: python3 tools/check_public_tree.py --tracked
+      - name: Compile
+        run: arduino-cli compile --jobs 2 --fqbn esp32:esp32:esp32:PartitionScheme=huge_app esp32_system

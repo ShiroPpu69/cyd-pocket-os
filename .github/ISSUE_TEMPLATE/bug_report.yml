@@ -1,0 +1,29 @@
+name: Bug report
+description: Reproduce a firmware or app issue. No personal configs or raw logs.
+body:
+  - type: markdown
+    attributes:
+      value: "Remove Wi-Fi credentials, tokens, account/device IDs and personal paths. Never attach personal firmware."
+  - type: input
+    id: hardware
+    attributes:
+      label: Board revision and core/library versions
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps, expected behavior and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Redacted diagnostic excerpt and tests attempted
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed personal credentials, identifiers and paths.
+          required: true
